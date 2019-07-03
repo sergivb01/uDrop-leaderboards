@@ -1,0 +1,43 @@
+.leaderboard {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  -moz-border-radius-topleft: 2px;
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-left-radius: 2px;
+  -webkit-border-top-right-radius: 2px;
+}
+
+.leaderboard > .leaderboard_body {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.leaderboard > .leaderboard_body.no_top {
+  border-top: 0;
+}
+
+.leaderboard .table tr td {
+  border: none !important;
+  border-top: none !important;
+}
+
+.leaderboard .table {
+  border-collapse: collapse;
+}
+
+.player {
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+.avatar {
+  width: 18px !important;
+  height: 18px !important;
+  border-radius: 3px;
+}
+
+.nickname {
+  margin-left: 10px;
+}

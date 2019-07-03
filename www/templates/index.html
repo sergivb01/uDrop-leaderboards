@@ -1,0 +1,41 @@
+{{ define "index" }}
+{{ template "head" }}
+
+
+<div class="ui stackable grid center aligned">
+  <div class="three column row">
+
+    <div class="column">
+      <h1 class="header">Practice ELO</h1>
+      <div class="leaderboard">
+        <table class="ui table very basic">
+          <thead>
+            <tr>
+              <th class="collapsing">Rank</th>
+              <th>Player</th>
+              <th class="right aligned collapsing">Kills</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{ range $i, $player := .Players }}
+            <tr>
+              <td class="collapsing">#3</td>
+              <td class="player">
+                <img class="app avatar small" src="https://cravatar.eu/avatar/{{ .Playername }}/24">
+                <a href="/player/{{ .Playername }}" class="nickname">{{ .Playername }}</a>
+              </td>
+              <td class="right aligned collapsing">1,190</td>
+            </tr>
+            {{ end }}
+          </tbody>
+        </table>
+      </div>
+    </div> <!-- End Column -->
+
+
+  </div>
+</div>
+
+
+{{ template "tail" }}
+{{ end }}
